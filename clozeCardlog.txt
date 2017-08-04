@@ -1,0 +1,3 @@
+{"cloze":"Pinnochio","text":"Pinnchio has a big nose","partial":"Pinnchio has a big nose"},
+{"cloze":"","text":"","partial":"..."},
+{"cloze":"your mama so fat","text":"your","partial":"your"},
