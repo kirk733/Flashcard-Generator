@@ -1,3 +1,1 @@
-{"front":"Who is the first president of the United States?","back":"George Washington"},
-{"front":"What state are the Seahawks from?","back":"Washington"},
-{"front":"What city are the Broncos from?","back":"Denver"},
+{"front":"Who is your daddy?","back":"me?"},{"front":"Who is your mama","back":"idk"},

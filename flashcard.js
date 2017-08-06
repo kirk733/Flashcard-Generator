@@ -45,7 +45,7 @@ var createBasicCard = function () {
     ]).then(function(inquirerResponse){
         var basicCard = new BasicCard(inquirerResponse.front, inquirerResponse.back);
 
-        fs.appendFile("basicCardlog.txt", "" + JSON.stringify(basicCard) + ","+ "\n", function(error) {
+        fs.appendFile("basicCardlog.txt", "" + JSON.stringify(basicCard) + ",", function(error) {
           if (error){
           return console.log(error);
           }
@@ -87,7 +87,7 @@ var createClozeCard = function () {
     ]).then(function(inquirerResponse){
         var clozeCard = new ClozeCard(inquirerResponse.text, inquirerResponse.cloze);
 
-        fs.appendFile("clozeCardlog.txt", "" + JSON.stringify(clozeCard) + "," + "\n", function(error) {
+        fs.appendFile("clozeCardlog.txt", "" + JSON.stringify(clozeCard) + ",", function(error) {
           if (error){
           return console.log(error);
           }
@@ -122,28 +122,19 @@ var basicQuiz = function(){
       var basicQuizArray = data.toString().split(",");
       var basicQuizArrayFront = [];
       var basicQuizArrayBack = [];
-
-      for(var i = 0; i < basicQuizArray.length; i+=2){
-        basicQuizArrayFront.push(basicQuizArray[i].replace("{", ""));
-      }
-
-      for(var i = 1; i < basicQuizArray.length; i+=2){
-        basicQuizArrayBack.push(basicQuizArray[i].replace("}", ""));
-      }
-
-      // console.log(basicQuizArrayBack);
+			console.log(basicQuizArray);
 
       inquirer
         .prompt([
       		    {
       				name: "basic_flashcard_question",
-      				message: basicQuizArrayFront[basicQuizCount],
+      				message: basicQuizArrayFront[0],
       		    },
       		]).then(function(inquirerResponse){
-              if ('"back"'+":"+'"'+inquirerResponse.basic_flashcard_question+'"' == basicQuizArrayBack[basicQuizCount]){
+              if ('"back"'+":"+'"'+inquirerResponse.basic_flashcard_question+'"' == basicQuizArrayBack[0]){
                 console.log("Correct!");
               } else {
-                console.log("Wrong! " + basicQuizArrayBack[basicQuizCount]);
+                console.log("Wrong! " + basicQuizArrayBack[0]);
               }
           })
     })
