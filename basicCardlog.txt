@@ -1,1 +1,1 @@
-{"front":"Who is your daddy?","back":"me?"},{"front":"Who is your mama","back":"idk"},
+{"front":"Who is your daddy?","back":"me?"},{"front":"Who is your mama","back":"idk"},{"front":"your mama","back":"mama"},{"front":"your dad","back":"dad"},
