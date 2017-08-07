@@ -1,2 +1,1 @@
-{"cloze":"your mama so fat","text":"your","partial":"your"},
-{"cloze":"Monkeys love bananas","text":"Monkeys","partial":"Monkeys"},
+{"cloze":"George Washington","text":"George Washington was the first president of the united states.","partial":"... was the first president of the united states."},{"cloze":"Denver Broncos","text":"Denver Broncos is the nfl team for Colorado","partial":"... is the nfl team for Colorado"},
